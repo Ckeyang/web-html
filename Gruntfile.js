@@ -10,7 +10,7 @@ module.exports = function (grunt) {
         //jshint
         jshint: {
             client: {
-                src: ['src/js/**/*.js'],
+                src: ['src/js/(animation,controllers,modules,util,view,widget)/*.js'],
                 options: {
                     jshintrc: 'src/.jshintrc'
                 }
