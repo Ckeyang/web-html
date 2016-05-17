@@ -12,7 +12,7 @@ _CSS结构_
     common                         //主要用户存放reset.css 和common.css
     icon                           //用户存放icon.css （用来编译images里的icon）
     layout                         //框架类css
-    model                          //模块css
+    modules                        //模块css
     public                         //公共css（如：main.css  ,index.css）
 
 #### HTML
@@ -20,14 +20,13 @@ _静态html_
 
     index.html                    //入口html
     model                         //模块html
-    public                        //公用模型
 
 #### IMAGES
 _图片结构_
 
     animation                     //存放动画需要的图片
     icon                          //存放icon图片
-    model                         //存放模块图片
+    modules                       //存放模块图片
 
 #### JS
 _JS结构_
@@ -61,7 +60,6 @@ _此目录用来存放编译后的各种文件，不用手动copy，此目录通
     npm install -g grunt-cli --save
 
 ####启动grunt
-    可以手写脚本来启动，在package。json里的script可以配置脚本
-    或者通过grunt直接启动
+    可以手写脚本来启动，在package。json里的script可以配置脚本或者通过grunt直接启动
     现在配置好的启动脚本有：npm dev （开发环境启动）
     对应的grunt是：grunt dev
