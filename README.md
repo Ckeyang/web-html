@@ -19,7 +19,7 @@ _CSS结构_
 _静态html_
 
     index.html                    //入口html
-    model                         //模块html
+    modules                         //模块html
 
 #### IMAGES
 _图片结构_
