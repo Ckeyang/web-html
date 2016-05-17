@@ -1,0 +1,80 @@
+@import 'reset.css';
+/*public*/
+*{padding:0;margin:0}
+body,html{width:100%;height:100%;font-family: "Microsoft YaHei"}
+
+/*clear*/
+.clear_both{clear: both}
+
+/*public tool*/
+.pr{position:relative}
+.pa{position:absolute}
+.fl{float: left}
+.fr{float: right}
+
+/*public width*/
+.container_with{width:80%}
+@media (max-width: 1500px) {
+    .container_with{width:100%}
+}
+.sidebar{width:20%}
+.content{width:80%}
+
+/*margin����*/
+.margin_center{margin:0 auto}
+
+/*text����*/
+.tac{text-align: center}
+.tar{text-align:right}
+.tal{text-align:left}
+.lh_70{line-height: 70px;}
+/* Button */
+.a_btn{display: inline-block;width:150px;height:48px;text-align: center;line-height: 48px;border-radius: 6px}/*Ĭ��*/
+.a_btn_80{display: inline-block;width:80px;height:32px;text-align: center;line-height: 32px;border-radius: 6px}/*���80px*/
+.a_btn_120{display: inline-block;width:120px;height:40px;text-align:center;line-height: 40px;border-radius:6px}/*���120px*/
+.a_btn_32y{display: inline-block;width:120px;height:32px;text-align: center;line-height: 32px;border-radius: 6px}/*�߶�32px*/
+.a_btn_60{display: inline-block;width:60px;height:32px;text-align: center;line-height: 32px;border-radius: 6px}
+
+/*background*/
+.bg_success{background: #20C960}
+.bg_cancel{background: #D7D7D7}
+.bg_emphasize{background:#c9302c}
+.bg_caveat{background: #E9DC51}
+.bg_rgb_gray{background:RGB(231,232,234)}
+.bg_rgb_y{background: RGB(255,153,0)}
+.bg_white{backgroud:white;}
+/*color*/
+.c_white{color:white}
+.c_FDE101{color:#FDE101}
+.c_black{color:black}
+.c_success{color: #202020}
+.c_cancel{color: #B8BAB9}
+.c_emphasize{color:#c9302c}
+.c_caveat{color: #E9DC51}
+
+/*font*/
+.fs_24{font-size:24px}
+.fs_50{font-size:50px}
+.fs_20{font-size:20px}
+
+/*input*/
+.input_text{height:50px;width:380px;border-radius: 6px 6px 6px 6px;font-size:20px;padding:0 0.5em}
+
+/*border*/
+.border_solid{border:1px solid black}/*Ĭ��*/
+.border_none{border:0}
+
+/*column*/
+.column_size{column-count: 4}
+.column_width{column-width: 100px}
+
+/*display*/
+.dn{display: none}
+.db{display: block}
+.dib{display: inline-block}
+
+/*padding*/
+.padding_2px{padding: 2px}
+
+/*Բ��*/
+.border_radius{border-radius: 6px;}
