@@ -63,5 +63,5 @@ _此目录用来存放编译后的各种文件，不用手动copy，此目录通
 ####启动grunt
     可以手写脚本来启动，在package。json里的script可以配置脚本
     或者通过grunt直接启动
-    现在配置好的启动脚本有：npm dev （开发环境启动）,npm gamma (这是打包的时候启动的)
-    对应的grunt是：grunt dev，grunt gamma
+    现在配置好的启动脚本有：npm dev （开发环境启动）
+    对应的grunt是：grunt dev
