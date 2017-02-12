@@ -27,6 +27,7 @@ _图片结构_
     animation                     //存放动画需要的图片
     icon                          //存放icon图片
     modules                       //存放模块图片
+    UI                            //存放原图
 
 #### JS
 _JS结构_

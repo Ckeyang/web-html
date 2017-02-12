@@ -17,8 +17,6 @@ body,html{width:100%;height:100%;font-family: "Microsoft YaHei"}
 @media (max-width: 1500px) {
     .container_with{width:100%}
 }
-.sidebar{width:20%}
-.content{width:80%}
 
 /*margin����*/
 .margin_center{margin:0 auto}
