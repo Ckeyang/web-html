@@ -1,8 +1,14 @@
 # 前端页面开发结构
 #####文档结构
+    1.简介
     1.目录结构
     2.操作手册
-
+## 简介
+    1. 主要使用npm来管理包（如：jquery,react）
+    2. 使用grunt来进行打包src下的文件到build路径（详情看Gruntfile.js配置）
+    3. 使用require来进行加载包文件(需配置config.js 路径：js目录下)
+    4. 动态template 使用freemarker进行编写 （网址:http://freemarker.org）
+    
 ## 目录结构
 ### SRC目录
 #### CSS
@@ -55,12 +61,13 @@ _此目录用来存放编译后的各种文件，不用手动copy，此目录通
     具体操作请百度，很详细
 
 ####安装需要的模块
-    npm install
+    npm install -g cnpm --registry=https://registry.npm.taobao.org  安装淘宝镜像
+    cnpm install
 
 ####安装grunt管理器
-    npm install -g grunt-cli --save
+    cnpm install -g grunt-cli --save
 
 ####启动grunt
-    可以手写脚本来启动，在package。json里的script可以配置脚本或者通过grunt直接启动
+    可以手写脚本来启动，在package.json里的script可以配置脚本或者通过grunt直接启动
     现在配置好的启动脚本有：npm dev （开发环境启动）
     对应的grunt是：grunt dev

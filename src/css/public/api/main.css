@@ -1,0 +1,252 @@
+html {
+    font-family: sans-serif;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+body {
+    margin: 0;
+}
+
+/**基础*/
+.ck_dn {
+    display: none
+}
+
+/**layout*/
+.ck_content {
+    width: 80%;
+    font-size: 16px
+}
+
+.ck_topbar {
+    width: 100%;
+    height: 7%
+}
+
+.ck_leftbar {
+    width: 15%;
+    height: 92.75%
+}
+
+.ck_rightbar {
+    width: 84.6%;
+    height: 92.75%
+}
+
+.ck_leftbar, .ck_rightbar {
+    overflow: auto;
+    display: inline-block;
+}
+
+/**btn*/
+.ck_btn {
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+.ck_btn_warn {
+    background: #F25663
+}
+
+.ck_btn_success {
+    background: #4cae4c
+}
+
+.ck_btn_sure {
+    background: #7C9DBC
+}
+
+.ck_btn_cancel {
+    background: gainsboro;
+    color: #202020
+}
+
+.ck_btn_warn, .ck_btn_success, .ck_btn_sure {
+    color: #F6FFF8
+}
+
+/**基础色*/
+.ck_font_rosiness {
+    color: #F25663
+}
+
+.ck_bg_rosiness {
+    background-color: #F25663
+}
+
+.ck_font_white {
+    color: #F6FFF8
+}
+
+.ck_bg_white {
+    background-color: #F6FFF8
+}
+
+.ck_font_popcorn {
+    color: #FEEB9F
+}
+
+.ck_bg_popcorn {
+    background-color: #FEEB9F
+}
+
+.ck_font_sky-blue {
+    color: #94D7F2
+}
+
+.ck_bg_sky-blue {
+    background-color: #94D7F2
+}
+
+.ck_font_blue {
+    color: #7C9DBC
+}
+
+.ck_bg_blue {
+    background-color: #7C9DBC
+}
+
+/**弹出框*/
+.ck_popup {
+    width: 40em;
+    height: 24em
+}
+
+.ck_min_popup {
+    width: 18em;
+    height: 8em
+}
+
+.ck_popup, .ck_min_popup {
+    z-index: 99;
+    margin: auto;
+    position: absolute;
+    padding: 1em;
+    font-size: 16px
+}
+
+/**组*/
+.ck_group {
+    margin: 1em
+}
+
+.ck_part {
+    display: inline-block
+}
+
+.ck_group, .ck_part {
+    padding: 1em
+}
+
+/**字体*/
+.ck_normal_font {
+    font-size: 16px
+}
+
+.ck_min_font {
+    font-size: 12px
+}
+
+.ck_title_font {
+    font-size: 24px
+}
+
+.ck_normal_font, .ck_min_font, .ck_title_font {
+    font-weight: normal
+}
+
+/**菜单*/
+.ck_horizontal_menu, .ck_vertical_menu {
+    position: relative
+}
+
+.ck_vertical_menu li {
+    padding: 0.5em 0;
+    display: block;
+    min-width: 100%;
+}
+
+.ck_horizontal_menu li {
+    position: relative;
+    padding: 0.5em 0.5em;
+    display: inline-block;
+    min-height: 100%;
+}
+
+.ck_vertical_menu li, .ck_horizontal_menu li {
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.ck_vertical_menu li ul, .ck_horizontal_menu li ul {
+    height: 0;
+    opacity: 0;
+    transition: all 0.8s;
+}
+
+.ck_horizontal_menu li ul {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+}
+
+.ck_vertical_menu li ul li {
+    width: auto
+}
+
+.ck_vertical_menu li:hover ul, .ck_horizontal_menu li:hover ul {
+    opacity: 1;
+    height: 100%;
+}
+
+.ck_menu_vertical li {
+    display: block
+}
+
+/**table*/
+.ck_table {
+    width: 100%;
+    text-align: left;
+    border: 1px solid gray
+}
+
+.ck_table th, .ck_table td {
+    padding: 10px 12px;
+    line-height: 1.42857143;
+}
+
+.ck_table thead {
+    background-color: #94D7F2
+}
+
+.ck_table_border tr {
+    border: 1px solid gray
+}
+
+.ck_table_border tr td {
+    border-right: 1px solid #7C9DBC
+}
+
+.ck_table_border tr th {
+    border-right: 1px solid #7C9DBC
+}
+
+.ck_table_border tr td:last-child {
+    border-right: 0
+}
+
+.ck_table_border tr th:last-child {
+    border-right: 0
+}
