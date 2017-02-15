@@ -197,10 +197,23 @@ body {
     width: 18em;
     height: 8em
 }
+.ck_popup:before,.ck_min_popup :before{
+    position:absolute;
+    content:"";
+    height:0;
+    width: 0;
+    pointer-events: none;
+    border: solid transparent;
+    border-bottom-color: #F25663;
+    border-width: 10px;
+    left: 20px;
+    margin-left: -10px;
+    bottom: 100%;
+}
 
 .ck_popup, .ck_min_popup {
     z-index: 99;
-    margin: auto;
+    margin:10px auto;
     position: absolute;
     padding: 1em;
     font-size: 16px
