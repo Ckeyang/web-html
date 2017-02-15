@@ -7,6 +7,21 @@ module.exports = function (grunt) {
     require('load-grunt-tasks')(grunt);
     require('time-grunt')(grunt);
     grunt.initConfig({
+        connect: {
+            options: {
+                // 服务器端口号
+                port: 8000,
+                // 服务器地址(可以使用主机名localhost，也能使用IP)
+                hostname: '0.0.0.0',
+                // 物理路径(默认为. 即根目录) 注：使用'.'或'..'为路径的时，可能会返回403 Forbidden. 此时将该值改为相对路径 如：/grunt/reloard。
+                base: 'build'
+            },
+            livereload: {
+                options: {
+                    open: 'http://localhost:<%= connect.options.port %>/html/api/index.html',
+                }
+            }
+        },
         //jshint
         jshint: {
             client: {
@@ -50,7 +65,7 @@ module.exports = function (grunt) {
                     options: {
                         timestamp: true
                     }
-                },  {
+                }, {
                     //js
                     expand: true,
                     cwd: 'src/js',
@@ -107,12 +122,18 @@ module.exports = function (grunt) {
                     ]
                 },
                 files: [
-                    {expand: true, cwd: 'src', src: ['html/**','template/**'], dest: 'build/'}
+                    {expand: true, cwd: 'src', src: ['html/**', 'template/**'], dest: 'build/'}
                 ]
             }
         },
         //watch
         watch: {
+            client: {
+                files: ['*.html', 'css/*', 'js/*', 'images/**/*'],
+                options: {
+                    livereload: true
+                }
+            },
             // lint js files when they change, and then copy them over to build directory
             js: {
                 files: ['src/js/**/*.js'],
@@ -141,6 +162,7 @@ module.exports = function (grunt) {
             }
         }
     });
-    grunt.registerTask('dev', ['jshint', 'clean', 'copy', 'replace', 'watch']);
-    grunt.registerTask('gamma', ['jshint', 'clean', 'copy', 'uglify', 'replace'])
+    grunt.registerTask('dev', ['jshint', 'clean', 'copy', 'replace']);
+    grunt.registerTask('gamma', ['jshint', 'clean', 'copy', 'uglify', 'replace']);
+    grunt.registerTask('http',['connect:livereload', 'watch']);
 };

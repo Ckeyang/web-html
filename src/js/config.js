@@ -9,16 +9,20 @@ require.config({
      */
     paths: {
         "jquery": "lib/jquery.min",
-        "ck_popup": "modules/ui/popup",
-        "ck_exception": "modules/exception/exception",
-        "ck_url":"modules/util/url",
-        "ck_http":"modules/network/http"
+        "ck_popup": "modules/api/ui/popup",
+        "ck_exception": "modules/api/exception/exception",
+        "ck_url": "modules/api/util/url",
+        "ck_http": "modules/api/network/http",
+        "ck_response": "modules/api/util/response",
+        "ck_menu": "modules/api/ui/menu",
+        "ck": "modules/api/ck"
     },
     /**
      * 有依赖关系的包，如（jquery的插件需要在jquery加载后再加载）
      *
      */
     shim: {
-        "ck_popup": ['jquery']
+        "ck_popup": ['jquery'],
+        "ck_http": ['jquery']
     }
 });

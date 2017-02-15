@@ -6,120 +6,221 @@
     <link rel="stylesheet" href="../../css/common/common.css">
     <link rel="stylesheet" href="../../css/public/api/main.css">
 </head>
-<body>
+<body class="ck_bg_deepblack">
 <input id="http" type="hidden" value="../../">
-<div class="ck_topbar ck_bg_sky-blue">
+<div class="ck_topbar">
+    <nav class="ck_nav_topList">
+        <ul>
+            <li></li>
+            <li></li>
+            <!--<li><span  class="ck_nav_menu_btn"></span></li>-->
+        </ul>
+    </nav>
+    <span class="ck_nav_menu_btn"></span>
+    <nav id="testMenu" class="ck_nav_menu ck_font_white">
+        <ul class="ck_vertical_menu">
+            <li>主页</li>
+            <li>layouts</li>
+            <li>table</li>
+        </ul>
+    </nav>
 </div>
-<div class="ck_leftbar ck_bg_popcorn">
-</div>
-<div class="ck_rightbar">
-    <div class="ck_content">
-        <section class="ck_group">
-            <h2>按钮</h2>
-            <div class="ck_part">
-                <a class="ck_btn ck_btn_cancel">按钮</a>
-                <a class="ck_btn ck_btn_sure">按钮</a>
-                <a class="ck_btn ck_btn_success">按钮</a>
-                <a class="ck_btn ck_btn_warn">按钮</a>
-            </div>
-        </section>
-        <section class="ck_group">
-            <h2>弹出框</h2>
-            <div class="ck_part">
-                <a id="testPopup" class="ck_btn_success ck_btn">显示普通弹出框</a>
-                <div class="ck_popup ck_bg_rosiness ck_dn" popupName="test1"><span
-                        class="ck_normal_font ck_font_white">正常</span>
-                </div>
-            </div>
-            <div class="ck_part">
-                <a id="testPopupmin" class="ck_btn_success ck_btn">显示小型弹出框</a>
-                <div class="ck_min_popup ck_bg_rosiness ck_dn" popupName="test2"><span
-                        class="ck_min_font ck_font_white">小号</span>
-                </div>
-            </div>
-        </section>
-        <section class="ck_group">
-            <h2>基础颜色</h2>
-            <div class="ck_part">
-                <div class="ck_btn ck_bg_blue"></div>
-                <div class="ck_btn ck_bg_sky-blue"></div>
-                <div class="ck_btn ck_bg_white"></div>
-                <div class="ck_btn ck_bg_rosiness"></div>
-                <div class="ck_btn ck_bg_popcorn"></div>
-            </div>
-        </section>
-        <section class="ck_group">
-            <h2>菜单</h2>
-            <div class="ck_part">
-                <h3>竖向菜单</h3>
-                <ul class="ck_vertical_menu">
-                    <li>标题1 我有副标题
-                        <ul class="ck_bg_sky-blue">
-                            <li>副标题1</li>
-                            <li>副标题2</li>
-                        </ul>
-                    </li>
-                    <li>标题2</li>
-                    <li>标题3</li>
-                </ul>
-            </div>
-            <div class="ck_part">
-                <h4>横向菜单</h4>
-                <ul class="ck_horizontal_menu">
-                    <li>标题1
-                        <ul class="ck_bg_sky-blue">
-                            <li>副标题1</li>
-                            <li>副标题2</li>
-                        </ul>
-                    </li>
-                    <li>标题2</li>
-                    <li>标题3</li>
-                </ul>
-            </div>
-        </section>
-        <section class="ck_group">
-            <h2>列表</h2>
-            <div class="ck_part">
-                <table class="ck_table ck_table_border">
-                    <thead>
-                    <tr>
-                        <th>士大夫似的</th>
-                        <th>士大夫似的</th>
-                        <th>士大夫似的</th>
-                        <th>士大的</th>
-                        <th>士大夫似的</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr>
-                        <td>撒地方就是都i附件</td>
-                        <td>撒地方就是都i附件</td>
-                        <td>撒地方就是都i附件</td>
-                        <td>撒地方就是都i附件</td>
-                        <td>撒地方就是都i附件</td>
-                    </tr>
-                    <tr>
-                        <td>撒地方就是都i附件</td>
-                        <td>撒地方就是都i附件</td>
-                        <td>撒地方就是都i附件</td>
-                        <td>撒地方就是都i附件</td>
-                        <td>撒地方就是都i附件</td>
-                    </tr>
-                    <tr>
-                        <td>撒地方就是都i附件</td>
-                        <td>撒地方就是都i附件</td>
-                        <td>撒地方就是都i附件</td>
-                        <td>撒地方就是都i附件</td>
-                        <td>撒地方就是都i附件</td>
-                    </tr>
-                    </tbody>
-                </table>
-            </div>
-        </section>
-    </div>
+<div class="ck_content ck_leftbar_250px ck_bg_white">
+      <section class="ck_group">
+         <h2>按钮</h2>
+         <div class="ck_part">
+             <a class="ck_btn ck_btn_cancel">按钮</a>
+             <a class="ck_btn ck_btn_sure">按钮</a>
+             <a class="ck_btn ck_btn_success">按钮</a>
+             <a class="ck_btn ck_btn_warn">按钮</a>
+             <a class="ck_btn ck_btn_danger">按钮</a>
+         </div>
+         <br/>
+     </section>
+     <section class="ck_group">
+         <h2>弹出框</h2>
+         <div class="ck_part">
+             <a id="testPopup" class="ck_btn_success ck_btn">显示普通弹出框</a>
+             <div class="ck_popup ck_bg_rosiness ck_dn" popupName="test1"><span
+                     class="ck_normal_font ck_font_white">正常</span>
+             </div>
+         </div>
+         <div class="ck_part">
+             <a id="testPopupmin" class="ck_btn_success ck_btn">显示小型弹出框</a>
+             <div class="ck_min_popup ck_bg_rosiness ck_dn" popupName="test2"><span
+                     class="ck_min_font ck_font_white">小号</span>
+             </div>
+         </div>
+     </section>
+     <section class="ck_group">
+         <h2>基础颜色</h2>
+         <div class="ck_part">
+             <div class="ck_btn ck_bg_blue"></div>
+             <div class="ck_btn ck_bg_sky-blue"></div>
+             <div class="ck_btn ck_bg_white"></div>
+             <div class="ck_btn ck_bg_rosiness"></div>
+             <div class="ck_btn ck_bg_popcorn"></div>
+         </div>
+     </section>
+    <section class="ck_group">
+         <h2>列表</h2>
+         <div class="ck_part">
+             <h2>ck_table 基本的</h2>
+             <table class="ck_table">
+                 <thead>
+                 <tr>
+                     <th>士大夫似的</th>
+                     <th>士大夫似的</th>
+                     <th>士大夫似的</th>
+                     <th>士大的</th>
+                     <th>士大夫似的</th>
+                 </tr>
+                 </thead>
+                 <tbody>
+                 <tr>
+                     <td>撒地方就是都i附件</td>
+                     <td>撒地方就是都i附件</td>
+                     <td>撒地方就是都i附件</td>
+                     <td>撒地方就是都i附件</td>
+                     <td>撒地方就是都i附件</td>
+                 </tr>
+                 <tr>
+                     <td>撒地方就是都i附件</td>
+                     <td>撒地方就是都i附件</td>
+                     <td>撒地方就是都i附件</td>
+                     <td>撒地方就是都i附件</td>
+                     <td>撒地方就是都i附件</td>
+                 </tr>
+                 <tr>
+                     <td>撒地方就是都i附件</td>
+                     <td>撒地方就是都i附件</td>
+                     <td>撒地方就是都i附件</td>
+                     <td>撒地方就是都i附件</td>
+                     <td>撒地方就是都i附件</td>
+                 </tr>
+                 <tr>
+                     <td>撒地方就是都i附件</td>
+                     <td>撒地方就是都i附件</td>
+                     <td>撒地方就是都i附件</td>
+                     <td>撒地方就是都i附件</td>
+                     <td>撒地方就是都i附件</td>
+                 </tr>
+                 <tr>
+                     <td>撒地方就是都i附件</td>
+                     <td>撒地方就是都i附件</td>
+                     <td>撒地方就是都i附件</td>
+                     <td>撒地方就是都i附件</td>
+                     <td>撒地方就是都i附件</td>
+                 </tr>
+                 <tr>
+                     <td>撒地方就是都i附件</td>
+                     <td>撒地方就是都i附件</td>
+                     <td>撒地方就是都i附件</td>
+                     <td>撒地方就是都i附件</td>
+                     <td>撒地方就是都i附件</td>
+                 </tr>
+                 </tbody>
+             </table>
+         </div>
+         <div class="ck_part">
+             <h2>ck_table_line 有线的</h2>
+             <table class="ck_table ck_table_line">
+                 <thead>
+                 <tr>
+                     <th>士大夫似的</th>
+                     <th>士大夫似的</th>
+                     <th>士大夫似的</th>
+                     <th>士大的</th>
+                     <th>士大夫似的</th>
+                 </tr>
+                 </thead>
+                 <tbody>
+                 <tr>
+                     <td>撒地方就是都i附件</td>
+                     <td>撒地方就是都i附件</td>
+                     <td>撒地方就是都i附件</td>
+                     <td>撒地方就是都i附件</td>
+                     <td>撒地方就是都i附件</td>
+                 </tr>
+                 <tr>
+                     <td>撒地方就是都i附件</td>
+                     <td>撒地方就是都i附件</td>
+                     <td>撒地方就是都i附件</td>
+                     <td>撒地方就是都i附件</td>
+                     <td>撒地方就是都i附件</td>
+                 </tr>
+                 <tr>
+                     <td>撒地方就是都i附件</td>
+                     <td>撒地方就是都i附件</td>
+                     <td>撒地方就是都i附件</td>
+                     <td>撒地方就是都i附件</td>
+                     <td>撒地方就是都i附件</td>
+                 </tr>
+                 </tbody>
+             </table>
+         </div>
+         <div class="ck_part">
+             <h2>ck_table_tri 条带</h2>
+             <table class="ck_table ck_table_line ck_table_tri">
+                 <thead>
+                 <tr>
+                     <th>士大夫似的</th>
+                     <th>士大夫似的</th>
+                     <th>士大夫似的</th>
+                     <th>士大的</th>
+                     <th>士大夫似的</th>
+                 </tr>
+                 </thead>
+                 <tbody>
+                 <tr>
+                     <td>撒地方就是都i附件</td>
+                     <td>撒地方就是都i附件</td>
+                     <td>撒地方就是都i附件</td>
+                     <td>撒地方就是都i附件</td>
+                     <td>撒地方就是都i附件</td>
+                 </tr>
+                 <tr>
+                     <td>撒地方就是都i附件</td>
+                     <td>撒地方就是都i附件</td>
+                     <td>撒地方就是都i附件</td>
+                     <td>撒地方就是都i附件</td>
+                     <td>撒地方就是都i附件</td>
+                 </tr>
+                 <tr>
+                     <td>撒地方就是都i附件</td>
+                     <td>撒地方就是都i附件</td>
+                     <td>撒地方就是都i附件</td>
+                     <td>撒地方就是都i附件</td>
+                     <td>撒地方就是都i附件</td>
+                 </tr>
+                 <tr>
+                     <td>撒地方就是都i附件</td>
+                     <td>撒地方就是都i附件</td>
+                     <td>撒地方就是都i附件</td>
+                     <td>撒地方就是都i附件</td>
+                     <td>撒地方就是都i附件</td>
+                 </tr>
+                 <tr>
+                     <td>撒地方就是都i附件</td>
+                     <td>撒地方就是都i附件</td>
+                     <td>撒地方就是都i附件</td>
+                     <td>撒地方就是都i附件</td>
+                     <td>撒地方就是都i附件</td>
+                 </tr>
+                 <tr>
+                     <td>撒地方就是都i附件</td>
+                     <td>撒地方就是都i附件</td>
+                     <td>撒地方就是都i附件</td>
+                     <td>撒地方就是都i附件</td>
+                     <td>撒地方就是都i附件</td>
+                 </tr>
+                 </tbody>
+             </table>
+         </div>
+     </section>
 </div>
 <script src="../../js/lib/require.js"></script>
 <script src="../../js/config.js"></script>
-<script src="../../js/public/api/main.js"></script>
+<script src="../../js/view/api/main.js"></script>
 </body>
 </html>
