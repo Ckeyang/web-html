@@ -8,7 +8,9 @@ define('ck_pagination', ['jquery', 'ck_exception'], function ($, exception) {
      */
     var pagination = {
         that: this,
+        PAGINATION:'ck-pagination',
         OPTIONS: {
+            ckPagination: null,
             totalCount: 0,
             size: 5,
             beforePageText: '<',
@@ -29,8 +31,32 @@ define('ck_pagination', ['jquery', 'ck_exception'], function ($, exception) {
         init: function (options) {
             $.extend(pagination.OPTIONS, options || {});
             pagination.totalPage = pagination._getTotalPage();
+            var flag = pagination._checkPagination();
+            if (!flag) {
+                exception.throwException("必须配置ckPagination!");
+                return false;
+            }
             var dom = pagination._createDom();
-            return dom;
+            pagination._addDomToTarget(dom);
+            pagination._activityPage(pagination.choosePage);
+            return pagination;
+        },
+        /**
+         * 添加dom到目标点
+         * @param dom
+         * @private
+         */
+        _addDomToTarget: function (dom) {
+            var ckPagination = pagination.OPTIONS.ckPagination;
+            $('[' + pagination.PAGINATION + '='+ckPagination+']').html(dom);
+        },
+        /**
+         * 检查ckPagination是否为null
+         * @private
+         */
+        _checkPagination: function () {
+            var ckPagination = pagination.OPTIONS.ckPagination;
+            return ckPagination ? ckPagination : false;
         },
         /**
          * 获取总页数
