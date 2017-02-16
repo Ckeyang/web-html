@@ -188,6 +188,14 @@ body {
 }
 
 /**弹出框*/
+.ck_popup_group {
+    position: relative;
+}
+
+.ck_popup, .ck_min_popup {
+    box-shadow: 0 0 15px gray;
+}
+
 .ck_popup {
     width: 40em;
     height: 24em
@@ -197,23 +205,42 @@ body {
     width: 18em;
     height: 8em
 }
-.ck_popup:before,.ck_min_popup :before{
-    position:absolute;
-    content:"";
-    height:0;
+
+.ck_popup_bleft:before, .ck_popup_bright:before {
+    position: absolute;
+    content: "";
+    height: 0;
     width: 0;
     pointer-events: none;
     border: solid transparent;
     border-bottom-color: #F25663;
     border-width: 10px;
-    left: 20px;
     margin-left: -10px;
     bottom: 100%;
 }
 
+.ck_popup_bright, .ck_popup_bleft {
+    top: 100%;
+}
+
+.ck_popup_bleft {
+    left: 0;
+}
+
+.ck_popup_bright {
+    right: 0;
+}
+
+.ck_popup_bleft:before {
+    left: 20px;
+}
+
+.ck_popup_bright:before {
+    right: 20px;
+}
+
 .ck_popup, .ck_min_popup {
     z-index: 99;
-    margin:10px auto;
     position: absolute;
     padding: 1em;
     font-size: 16px
@@ -416,4 +443,46 @@ input {
     height: 40px;
     border-radius: 0;
     -webkit-appearance: none;
+}
+/**
+pagination
+ */
+.ck_pagination {
+    display: inline-block;
+    padding-left: 0;
+    margin: 20px 0;
+    border-radius: 4px;
+}
+
+.ck_pagination > li {
+    display: inline-block;
+}
+
+.ck_pagination > li > a:focus, .ck_pagination > li > a:hover, .ck_pagination > li > span:focus, .ck_pagination > li > span:hover {
+    z-index: 2;
+    color: #23527c;
+    background-color: #eee;
+    border-color: #ddd;
+}
+
+.ck_pagination > li > a, .ck_pagination > li > span {
+    position: relative;
+    float: left;
+    padding: 6px 12px;
+    margin-left: -6px;
+    line-height: 1.42857143;
+    color: #337ab7;
+    text-decoration: none;
+    background-color: #fff;
+    border: 1px solid #ddd;
+}
+
+.ck_pagination > li:first-child > a, .ck_pagination > li:first-child > span {
+    margin-left: 0;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+.ck_pagination>li:last-child>a, .ck_pagination>li:last-child>span {
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
 }

@@ -15,6 +15,7 @@ require.config({
         "ck_http": "modules/api/network/http",
         "ck_response": "modules/api/util/response",
         "ck_menu": "modules/api/ui/menu",
+        "ck_pagination":"modules/api/ui/pagination",
         "ck": "modules/api/ck"
     },
     /**
