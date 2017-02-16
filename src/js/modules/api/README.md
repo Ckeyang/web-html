@@ -1,4 +1,7 @@
 #UI使用简介
+### 编写规则
+    统一使用ck开头
+    ck-popup  ck加减号进行target定型
 ### 弹出框
     <a id="testPopup" ck-contolspopup="popup" class="ck_popup_group">
     显示普通弹出框
