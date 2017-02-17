@@ -26,7 +26,7 @@ body {
 
 .ck_topbar {
     position: relative;
-    background-color: black;
+    background-color: rgb(125, 185, 222);
     width: 100%;
     height: 69px;
 }
@@ -185,6 +185,34 @@ body {
 
 .ck_bg_lightgreen {
     background-color: rgba(27, 188, 155, 0.42)
+}
+
+.ck_bg_kachi {
+    background-color: rgb(8, 25, 45)
+}
+
+.ck_bg_kon {
+    background-color: rgb(15, 37, 64);
+}
+
+.ck_bg_kurotsurubami {
+    background-color: rgb(11, 16, 19);
+}
+
+.ck_bg_tsuyukusa {
+    background-color: rgb(46, 169, 223)
+}
+
+.ck_bg_gunjyo {
+    background-color: rgb(81, 168, 221)
+}
+
+.ck_bg_wasurenagusa {
+    background-color: rgb(125, 185, 222)
+}
+
+.ck_bg_hanada {
+    background-color: rgb(0, 98, 132)
 }
 
 /**弹出框*/

@@ -4,6 +4,7 @@
 define('ck_chart', ['jquery', 'ck_canvas', 'exception'], function ($, canvas, exception) {
     var ck_chart = function () {
         var that = this;
+        this.colors=[];
         this.OPTIONS = {
             type: 'rect',//矩形表
             targetDom: '#canvas',
