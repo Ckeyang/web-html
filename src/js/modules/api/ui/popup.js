@@ -54,13 +54,13 @@ define('ck_popup', ['jquery', 'ck_exception'], function ($, ck_exception) {
      * @type {{popupList: Array, init: init, _createPopup: _createPopup, getPopList: getPopList}}
      */
     var popupControls = {
-        popupList: [],
+        _popupList: [],
         init: function () {
             var list = $('[' + CONTOLSPOPUP + ']');
             var length = list.length;
             for (var i = 0; i < length; i++) {
                 var pid = $(list[i]).attr(CONTOLSPOPUP);
-                this.popupList.push(pid);
+                this._popupList.push(pid);
                 this._createPopup(pid);
             }
         },
@@ -68,7 +68,7 @@ define('ck_popup', ['jquery', 'ck_exception'], function ($, ck_exception) {
             popup(pid);
         },
         getPopList: function () {
-            return this.popupList;
+            return this._popupList;
         }
     };
     /**

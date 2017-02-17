@@ -478,6 +478,14 @@ pagination
     border: 1px solid #ddd;
 }
 
+@media (max-width: 786px) {
+    .ck_pagination > li > a, .ck_pagination > li > span {
+        position: relative;
+        float: left;
+        padding: 3px 6px;
+    }
+}
+
 .ck_pagination > li:first-child > a, .ck_pagination > li:first-child > span {
     margin-left: 0;
     border-top-left-radius: 4px;

@@ -6,6 +6,8 @@ define('ck_canvas', ['jquery', 'ck_exception'], function ($, exception) {
         ctx: null,
         canvasBoard: null,
         canvasUrl: null,
+        fontColor: null,
+        fillColor: null,
         /**
          * 创建画板
          * height,width
@@ -23,13 +25,11 @@ define('ck_canvas', ['jquery', 'ck_exception'], function ($, exception) {
         },
         /**
          * 重置画板
-         * @param ctx
-         * @param canvas
-         * @returns {*}
+         * @returns {canvas}
          */
         resetBoard: function () {
             this.ctx.clearRect(this.canvasBoard.width, this.canvasBoard.height);
-            return ctx;
+            return this;
         },
         /**
          * 返回canvas
@@ -38,6 +38,10 @@ define('ck_canvas', ['jquery', 'ck_exception'], function ($, exception) {
         getCavas: function () {
             return this.canvasBoard
         },
+        /**
+         * 获取canvasUrl
+         * @returns {null}
+         */
         getcanvasUrl: function () {
             return this.canvasUrl
         },
@@ -67,7 +71,7 @@ define('ck_canvas', ['jquery', 'ck_exception'], function ($, exception) {
             var zoptions = {
                 x: 0, y: 0
             };
-            $.extend(zoptions,options||{});
+            $.extend(zoptions, options || {});
             ctx.moveTo(zoptions.x, zoptions.y);
             return this
         },
@@ -82,7 +86,7 @@ define('ck_canvas', ['jquery', 'ck_exception'], function ($, exception) {
                 x: 0,
                 y: 0
             };
-            $.extend(zoptions,options||{});
+            $.extend(zoptions, options || {});
             ctx.lineTo(zoptions.x, zoptions.y);
             return this;
         },
