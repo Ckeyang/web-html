@@ -9,18 +9,32 @@
 <body class="ck_bg_kon">
 <input id="http" type="hidden" value="../../">
 <div class="ck_topbar">
-    <nav class="ck_nav_topList">
+    <div class="ck_title_font ck_title"><a>xxxxx系统</a></div>
+    <nav class="ck_nav_topList ck_fr">
         <ul>
-            <li></li>
-            <li></li>
+            <li><a ck-controlspopup="popup3" class="ck_btn ck_pr"><img class="ck_avatar"
+                                                                       src="../../images/glyphicons/png/glyphicons-8-user-remove.png">
+                <div ck-popup="popup3" class="ck_min_popup ck_bg_sky-blue ck_popup_bright ck_dn">
+                    <nav class="ck_list">
+                        <ul>
+                            <li>警告消息<span class="ck_messageIcon ck_bg_popcorn" style="right:25px;">1</span></li>
+                            <li>错误消息<span class="ck_messageIcon ck_bg_rosiness" style="right:25px;">21</span></li>
+                            <li>普通消息<span class="ck_messageIcon ck_bg_wasurenagusa" style="right:25px;">13</span></li>
+                            <li>成功消息<span class="ck_messageIcon ck_bg_success" style="right:25px;">7</span></li>
+                        </ul>
+                    </nav>
+                </div>
+            </a></li>
+            <li><a class="ck_btn">退出</a></li>
         </ul>
     </nav>
     <span ck-controlsnav="menu" class="ck_nav_menu_btn"></span>
     <nav ck-nav="menu" id="testMenu" class="ck_nav_menu ck_font_white">
         <ul class="ck_vertical_menu">
-            <li>主页</li>
-            <li>layouts</li>
-            <li>table</li>
+            <li><a href="index.html">index</a></li>
+            <li><a href="layout.html">layouts</a></li>
+            <li><a href="table.html">table</a></li>
+            <li><a href="chart.html">chart</a></li>
         </ul>
     </nav>
 </div>
@@ -56,212 +70,21 @@
     <section class="ck_group">
         <h2>基础颜色</h2>
         <div class="ck_part">
-            <div class="ck_btn ck_bg_blue"></div>
-            <div class="ck_btn ck_bg_sky-blue"></div>
-            <div class="ck_btn ck_bg_white"></div>
-            <div class="ck_btn ck_bg_rosiness"></div>
-            <div class="ck_btn ck_bg_popcorn"></div>
-            <div class="ck_btn ck_bg_somber"></div>
-            <div class="ck_btn ck_bg_black"></div>
-            <div class="ck_btn ck_bg_deepblack"></div>
-            <div class="ck_btn ck_bg_kachi"></div>
-            <div class="ck_btn ck_bg_kon"></div>
-            <div class="ck_btn ck_bg_kurotsurubami"></div>
-            <div class="ck_btn ck_bg_tsuyukusa"></div>
-            <div class="ck_btn ck_bg_gunjyo"></div>
-            <div class="ck_btn ck_bg_wasurenagusa"></div>
-            <div class="ck_btn ck_bg_hanada"></div>
-        </div>
-    </section>
-    <section class="ck_group">
-        <h2>layout</h2>
-        <div class="ck_part">
-            <span class="col_md_12">
-            <input class="ck_form_default col_md_12" placeholder="col_md_12">
-            </span>
-            <span class="col_md_2">
-            <input class="ck_form_default " placeholder="col_md_2">
-            </span>
-            <span class="col_md_3">
-            <input class="ck_form_default col_md_3" placeholder="col_md_3">
-            </span>
-            <span class="col_md_4">
-            <input class="ck_form_default col_md_4" placeholder="col_md_4">
-            </span>
-            <span class="col_md_5">
-            <input class="ck_form_default col_md_5" placeholder="col_md_5">
-            </span>
-            <span class="col_md_6">
-            <input class="ck_form_default col_md_6" placeholder="col_md_6">
-            </span>
-            <span class="col_md_7">
-            <input class="ck_form_default col_md_7" placeholder="col_md_7">
-            </span>
-            <span class="col_md_8">
-            <input class="ck_form_default col_md_8" placeholder="col_md_8">
-            </span>
-            <span class="col_md_9">
-            <input class="ck_form_default col_md_9" placeholder="col_md_9">
-            </span>
-            <span class="col_md_10">
-            <input class="ck_form_default col_md_10" placeholder="col_md_10">
-            </span>
-        </div>
-    </section>
-    <section class="ck_group">
-        <h2>列表</h2>
-        <div class="ck_part">
-            <h2>ck_table 基本的</h2>
-            <table class="ck_table">
-                <thead>
-                <tr>
-                    <th>士大夫似的</th>
-                    <th>士大夫似的</th>
-                    <th>士大夫似的</th>
-                    <th>士大的</th>
-                    <th>士大夫似的</th>
-                </tr>
-                </thead>
-                <tbody>
-                <tr>
-                    <td>撒地方就是都i附件</td>
-                    <td>撒地方就是都i附件</td>
-                    <td>撒地方就是都i附件</td>
-                    <td>撒地方就是都i附件</td>
-                    <td>撒地方就是都i附件</td>
-                </tr>
-                <tr>
-                    <td>撒地方就是都i附件</td>
-                    <td>撒地方就是都i附件</td>
-                    <td>撒地方就是都i附件</td>
-                    <td>撒地方就是都i附件</td>
-                    <td>撒地方就是都i附件</td>
-                </tr>
-                <tr>
-                    <td>撒地方就是都i附件</td>
-                    <td>撒地方就是都i附件</td>
-                    <td>撒地方就是都i附件</td>
-                    <td>撒地方就是都i附件</td>
-                    <td>撒地方就是都i附件</td>
-                </tr>
-                <tr>
-                    <td>撒地方就是都i附件</td>
-                    <td>撒地方就是都i附件</td>
-                    <td>撒地方就是都i附件</td>
-                    <td>撒地方就是都i附件</td>
-                    <td>撒地方就是都i附件</td>
-                </tr>
-                <tr>
-                    <td>撒地方就是都i附件</td>
-                    <td>撒地方就是都i附件</td>
-                    <td>撒地方就是都i附件</td>
-                    <td>撒地方就是都i附件</td>
-                    <td>撒地方就是都i附件</td>
-                </tr>
-                <tr>
-                    <td>撒地方就是都i附件</td>
-                    <td>撒地方就是都i附件</td>
-                    <td>撒地方就是都i附件</td>
-                    <td>撒地方就是都i附件</td>
-                    <td>撒地方就是都i附件</td>
-                </tr>
-                </tbody>
-            </table>
-        </div>
-        <div class="ck_part">
-            <h2>ck_table_line 有线的</h2>
-            <table class="ck_table ck_table_line">
-                <thead>
-                <tr>
-                    <th>士大夫似的</th>
-                    <th>士大夫似的</th>
-                    <th>士大夫似的</th>
-                    <th>士大的</th>
-                    <th>士大夫似的</th>
-                </tr>
-                </thead>
-                <tbody>
-                <tr>
-                    <td>撒地方就是都i附件</td>
-                    <td>撒地方就是都i附件</td>
-                    <td>撒地方就是都i附件</td>
-                    <td>撒地方就是都i附件</td>
-                    <td>撒地方就是都i附件</td>
-                </tr>
-                <tr>
-                    <td>撒地方就是都i附件</td>
-                    <td>撒地方就是都i附件</td>
-                    <td>撒地方就是都i附件</td>
-                    <td>撒地方就是都i附件</td>
-                    <td>撒地方就是都i附件</td>
-                </tr>
-                <tr>
-                    <td>撒地方就是都i附件</td>
-                    <td>撒地方就是都i附件</td>
-                    <td>撒地方就是都i附件</td>
-                    <td>撒地方就是都i附件</td>
-                    <td>撒地方就是都i附件</td>
-                </tr>
-                </tbody>
-            </table>
-        </div>
-        <div class="ck_part">
-            <h2>ck_table_tri 条带</h2>
-            <table class="ck_table ck_table_line ck_table_tri">
-                <thead>
-                <tr>
-                    <th>士大夫似的</th>
-                    <th>士大夫似的</th>
-                    <th>士大夫似的</th>
-                    <th>士大的</th>
-                    <th>士大夫似的</th>
-                </tr>
-                </thead>
-                <tbody>
-                <tr>
-                    <td>撒地方就是都i附件</td>
-                    <td>撒地方就是都i附件</td>
-                    <td>撒地方就是都i附件</td>
-                    <td>撒地方就是都i附件</td>
-                    <td>撒地方就是都i附件</td>
-                </tr>
-                <tr>
-                    <td>撒地方就是都i附件</td>
-                    <td>撒地方就是都i附件</td>
-                    <td>撒地方就是都i附件</td>
-                    <td>撒地方就是都i附件</td>
-                    <td>撒地方就是都i附件</td>
-                </tr>
-                <tr>
-                    <td>撒地方就是都i附件</td>
-                    <td>撒地方就是都i附件</td>
-                    <td>撒地方就是都i附件</td>
-                    <td>撒地方就是都i附件</td>
-                    <td>撒地方就是都i附件</td>
-                </tr>
-                <tr>
-                    <td>撒地方就是都i附件</td>
-                    <td>撒地方就是都i附件</td>
-                    <td>撒地方就是都i附件</td>
-                    <td>撒地方就是都i附件</td>
-                    <td>撒地方就是都i附件</td>
-                </tr>
-                <tr>
-                    <td>撒地方就是都i附件</td>
-                    <td>撒地方就是都i附件</td>
-                    <td>撒地方就是都i附件</td>
-                    <td>撒地方就是都i附件</td>
-                    <td>撒地方就是都i附件</td>
-                </tr>
-                <tr>
-                    <td>撒地方就是都i附件</td>
-                    <td>撒地方就是都i附件</td>
-                    <td>撒地方就是都i附件</td>
-                    <td>撒地方就是都i附件</td>
-                    <td>撒地方就是都i附件</td>
-                </tr>
-                </tbody>
-            </table>
+            <div class="ck_btn ck_bg_blue" style="margin: .5em;color:white">ck_bg_blue</div>
+            <div class="ck_btn ck_bg_sky-blue" style="margin: .5em;color:white">ck_bg_sky-blue</div>
+            <div class="ck_btn ck_bg_white" style="margin: .5em;color:black">ck_bg_white</div>
+            <div class="ck_btn ck_bg_rosiness" style="margin: .5em;color:white">ck_bg_rosiness</div>
+            <div class="ck_btn ck_bg_popcorn " style="margin: .5em;color:white">ck_bg_popcorn</div>
+            <div class="ck_btn ck_bg_somber" style="margin: .5em;color:white">ck_bg_somber</div>
+            <div class="ck_btn ck_bg_black" style="margin: .5em;color:white">ck_bg_black</div>
+            <div class="ck_btn ck_bg_deepblack" style="margin: .5em;color:white">ck_bg_deepblack</div>
+            <div class="ck_btn ck_bg_kachi" style="margin: .5em;color:white">ck_bg_kachi</div>
+            <div class="ck_btn ck_bg_kon" style="margin: .5em;color:white">ck_bg_kon</div>
+            <div class="ck_btn ck_bg_kurotsurubami" style="margin: .5em;color:white">ck_bg_kurotsurubami</div>
+            <div class="ck_btn ck_bg_tsuyukusa" style="margin: .5em;color:white">ck_bg_tsuyukusa</div>
+            <div class="ck_btn ck_bg_gunjyo" style="margin: .5em;color:white">ck_bg_gunjyo</div>
+            <div class="ck_btn ck_bg_wasurenagusa" style="margin: .5em;color:white">ck_bg_wasurenagusa</div>
+            <div class="ck_btn ck_bg_hanada" style="margin: .5em;color:white">ck_bg_hanada</div>
         </div>
     </section>
     <section class="ck_group">
