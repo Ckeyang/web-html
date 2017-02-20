@@ -10,12 +10,41 @@ body {
 }
 
 /**基础*/
+.ck_container {
+    width: 80%;
+    min-height: 90%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.ck_centerBox {
+    position: absolute;
+    width: 100%;
+    top: 25%;
+    height: 100px;
+    vertical-align: middle;
+}
 
 .ck_avatar {
     width: 2.5em;
     height: 2.5em;
     border-radius: 100%;
     border: 2px solid #337ab7;
+}
+
+.ck_userIcon {
+    background: url("../../../images/glyphicons/png/glyphicons-4-user.png") no-repeat;
+}
+
+.ck_passwordIcon {
+    background: url('../../../images/glyphicons/png/glyphicons-204-lock.png') no-repeat;
+}
+
+.ck_userIcon, .ck_passwordIcon {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-size: 100% 100%;
 }
 
 .ck_messageIcon {
@@ -138,6 +167,7 @@ body {
 
 /**btn*/
 .ck_btn {
+    color: #ffffff;
     display: inline-block;
     padding: 6px 12px;
     margin-bottom: 0;
@@ -577,6 +607,12 @@ input {
     height: 40px;
     border-radius: 0;
     -webkit-appearance: none;
+}
+
+.ck_checkbox {
+    width: 1em;
+    height: 1em;
+    color: #66afe9;
 }
 
 /**

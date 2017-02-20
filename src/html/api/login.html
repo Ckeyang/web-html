@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>login</title>
+    <link rel="stylesheet" href="../../css/common/common.css">
+    <link rel="stylesheet" href="../../css/public/api/main.css">
+    <style>
+        .loginBox {
+            position: relative;;
+            width: 400px;
+            background-color: #fff;
+            color: black;
+            text-align: center;
+            display: block;
+            margin: 0 auto;
+            padding: 1em 0;
+            height: 250px;
+            border-radius: 8px;
+            box-shadow: 0 0 12px #ccc;
+        }
+
+        .text_username, .text_password {
+            padding: .3em 0 .3em 2.5em;
+            width: 80%;
+            border-radius: 8px;
+            display: inline-block;
+            margin: .5em 0;
+            font-size: 16px;
+        }
+
+        .margin_top_bottom {
+            margin: 1em 0;
+        }
+        .icon_pa{
+            position: absolute;left:30px;top:30%
+        }
+    </style>
+</head>
+<body class="ck_bg_kon">
+<div class="ck_container">
+    <div class="ck_centerBox">
+        <div class="loginBox">
+            <h2>登陆操作</h2>
+            <div class="ck_pr">
+                <span class="ck_userIcon icon_pa"></span>
+                <input class="text_username ck_form_default"
+                       placeholder="用户名" type="text"/></div>
+            <div class="ck_pr">
+                <span class="ck_passwordIcon icon_pa"></span>
+                <input class="text_password ck_form_default"
+                       placeholder="密码" type="password"/></div>
+            <p class="margin_top_bottom" style="width:80%;display: inline-block">
+                <span class="ck_fl"><input class="ck_checkbox" type="checkbox"/> &nbsp;&nbsp;&nbsp;&nbsp;记住我</span>
+                <span id="messageBox" class="ck_font_rosiness">账号密码错误</span>
+            </p>
+            <a class="ck_btn ck_btn_sure" style="width:80%" href="index.html">登陆</a>
+        </div>
+    </div>
+</div>
+</body>
+</html>
