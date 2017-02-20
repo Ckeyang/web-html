@@ -1,7 +1,7 @@
 /**
  * Created by Administrator on 2017/2/14.
  */
-require(['jquery', 'ck'], function ($, ck) {
+require(['jquery', 'ck', 'ck_template'], function ($, ck, template) {
     /**
      *  ckPagination: null, //唯一
      totalCount: 0,
@@ -17,4 +17,5 @@ require(['jquery', 'ck'], function ($, ck) {
         }
      */
     var pagination = new ck.pagination({ckPagination: 'pagination', totalCount: 120, size: 2, nowPage: 10});
+    template({model: 'template', data: {name: 'ck', age: 23}});
 });
