@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>template api</title>
+    <link rel="stylesheet" href="../../css/common/common.css">
+    <link rel="stylesheet" href="../../css/public/api/main.css">
+</head>
+<body>
+<input id="http" type="hidden" value="../../">
+<section class="ck_group">
+    <div ck-model="template" ck-repeat="item in data">
+        <span>{{name}}</span>
+        <span>{{age}}</span>
+    </div>
+</section>
+<script src="../../js/lib/require.js"></script>
+<script src="../../js/config.js"></script>
+<script src="../../js/view/tempapi/tempapi.js"></script>
+</body>
+</html>

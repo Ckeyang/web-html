@@ -24,3 +24,18 @@
         </nav>
     使用ck-controlsnav ck-nav
     次导航栏只能唯一，出现多次会报错
+
+#### 进度条
+    <h2>进度条</h2>
+            <div class="ck_part" style="width:400px;">
+                <div class="ck_progress" ck-controlsprogress="test1" progressMax="100">
+                    <div class="ck_bg_black ck_progress_animation" ck-progress="test1" progressValue="60"></div>
+                </div>
+                <div class="ck_progress" ck-controlsprogress="test2" progressMax="100">
+                    <div class="ck_bg_rosiness ck_progress_animation" ck-progress="test2" progressValue="20"></div>
+                </div>
+                <div class="ck_progress" ck-controlsprogress="test3" progressMax="45">
+                    <div class="ck_bg_kon ck_progress_animation" ck-progress="test3" progressValue="30"></div>
+                </div>
+            </div>
+            progressMax，progressValue为可选项。默认为 100,60

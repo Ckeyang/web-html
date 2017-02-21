@@ -12,11 +12,11 @@ require.config({
         "ck_popup": "modules/api/ui/popup",
         "ck_exception": "modules/api/exception/exception",
         "ck_url": "modules/api/util/url",
-        "ck_http": "modules/api/network/http",
         "ck_response": "modules/api/util/response",
         "ck_menu": "modules/api/ui/menu",
         "ck_pagination": "modules/api/ui/pagination",
         "ck_template": "modules/cktemplate/cktemplate",
+        "ck_progress": "modules/api/ui/progress",
         "ck": "modules/api/ck"
     },
     /**

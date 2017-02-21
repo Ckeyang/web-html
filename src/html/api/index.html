@@ -31,7 +31,8 @@
     <span ck-controlsnav="menu" class="ck_nav_menu_btn"></span>
     <nav ck-nav="menu" id="testMenu" class="ck_nav_menu ck_font_white">
         <ul class="ck_vertical_menu">
-            <li><a href="index.html">index</a></li>
+            <li ck-controlssubnav="index"><a href="index.html">index</a></li>
+            <ul class="ck_dn" ck-subnav="index"><li>test1</li><li>test2</li><li>test3</li></ul>
             <li><a href="layout.html">layouts</a></li>
             <li><a href="table.html">table</a></li>
             <li><a href="chart.html">chart</a></li>
@@ -48,7 +49,20 @@
             <a class="ck_btn ck_btn_warn">按钮</a>
             <a class="ck_btn ck_btn_danger">按钮</a>
         </div>
-        <br/>
+    </section>
+    <section class="ck_group">
+        <h2>进度条</h2>
+        <div class="ck_part" style="width:400px;">
+            <div class="ck_progress" ck-controlsprogress="test1" progressMax="80">
+                <div class="ck_bg_black ck_progress_animation" ck-progress="test1" progressValue="60"></div>
+            </div>
+            <div class="ck_progress" ck-controlsprogress="test2">
+                <div class="ck_bg_rosiness ck_progress_animation" ck-progress="test2"></div>
+            </div>
+            <div class="ck_progress" ck-controlsprogress="test3" progressMax="45">
+                <div class="ck_bg_kon ck_progress_animation" ck-progress="test3" progressValue="30"></div>
+            </div>
+        </div>
     </section>
     <section class="ck_group">
         <h2>弹出框</h2>
@@ -98,12 +112,6 @@
                 <li><a href="#">4</a></li>
                 <li><a href="#">》</a></li>
             </ul>
-        </div>
-    </section>
-    <section class="ck_group">
-        <div ck-model="template">
-            <span>{{name}}</span>
-            <span>{{age}}</span>
         </div>
     </section>
 </div>
