@@ -104,7 +104,7 @@ define('ck_pagination', ['jquery', 'ck_exception'], function ($, exception) {
                             dom += that._createLi(i + 1);
                         }
                     } else if (totalPage - choosePage < Math.ceil(showLength / 2) + 1) {
-                        for (var i = totalPage - showLength; i < showLength; i++) {
+                        for (var i = totalPage - showLength; i < totalPage; i++) {
                             dom += that._createLi(i + 1);
                         }
                     } else {

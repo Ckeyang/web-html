@@ -1,7 +1,7 @@
 /**
  * Created by intel on 2017/2/20.
  */
-define('ck_template', ['jquery'], function ($) {
+define('ck_template', ['jquery','ck_dom'], function ($,dom) {
     var template = function (options) {
         //DocumentFragment
         var CKMODEL = "ck-model";

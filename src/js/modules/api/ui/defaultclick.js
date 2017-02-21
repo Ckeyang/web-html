@@ -1,9 +1,9 @@
 /**
  * Created by ckey on 2017/2/13.
  */
-define('ck_popup', ['jquery', 'ck_exception'], function ($, ck_exception) {
-    var CONTOLSPOPUP = 'ck-controlspopup';
-    var POPUP = 'ck-popup';
+define('ck_defaultclick', ['jquery', 'ck_exception'], function ($, ck_exception) {
+    var CONTOLSPOPUP = 'ck-controlsdefaultclick';
+    var POPUP = 'ck-defaultclick';
     /**
      * 原型
      * @param pid
@@ -40,13 +40,6 @@ define('ck_popup', ['jquery', 'ck_exception'], function ($, ck_exception) {
         var _closePopup = function (popup) {
             popup.hide();
         };
-        /**
-         * 监听点击事件
-         */
-        this.click = function () {
-            this._checkPopup();
-        };
-
         return this.init(pid)
     };
     /**

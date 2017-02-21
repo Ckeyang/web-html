@@ -3,9 +3,7 @@
  */
 define('ck_menu', ['jquery', 'ck_response', 'ck_exception'], function ($, response, exception) {
     var CONTOLSNAV = 'ck-controlsnav';
-    var CONTOLSSUBNAV = 'ck-controlssubnav';
     var NAV = 'ck-nav';
-    var SUBNAV = 'ck-subnav';
     var navMenu = function (nid) {
         var that = this;
         /*that.OPTIONS = {
@@ -65,17 +63,9 @@ define('ck_menu', ['jquery', 'ck_response', 'ck_exception'], function ($, respon
             var length = $('[' + CONTOLSNAV + ']').length;
             this.nav = nid;
             length < 2 ? this.createNavmenu(nid) : exception.throwException("此导航栏只能唯一");
-            var subList = $('[' + CONTOLSSUBNAV + ']');
-            for (var i = 0; i < subList.length; i++) {
-                var subid = $(subList[i]).attr(CONTOLSSUBNAV);
-                this.createSubNav(subid);
-            }
         },
         createNavmenu: function (nid) {
             navMenu(nid)
-        },
-        createSubNav: function (subid) {
-            subNav(subid)
         }
     };
     $.ready(menuContorls.init());
