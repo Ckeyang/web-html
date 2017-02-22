@@ -4,6 +4,6 @@
 /**
  * Created by Administrator on 2017/2/14.
  */
-require(['jquery', 'ck_template'], function ($, template) {
+require(['jquery', 'ck_templateC'], function ($, template) {
     template({model: 'template', data: [{name: 'ck', age: 23},{name: 'ay', age: 24}]});
 });

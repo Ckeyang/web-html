@@ -18,6 +18,7 @@ require.config({
         "ck_progress": "modules/api/ui/progress",
         "ck": "modules/api/ck",
 
+        "ck_templateC": "modules/cktemplate/templateController",
         "ck_template": "modules/cktemplate/model/template",
         "ck_dom": "modules/cktemplate/dom/dom",
         "ck_bind": "modules/cktemplate/bind/bind"
