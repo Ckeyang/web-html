@@ -17,4 +17,7 @@ require(['jquery', 'ck'], function ($, ck) {
         }
      */
     var pagination = new ck.pagination({ckPagination: 'pagination', totalCount: 120, size: 2, nowPage: 10});
+    setTimeout(function () {
+        console.log(ck.progress.getProgress('test2'))
+    }, 10000)
 });

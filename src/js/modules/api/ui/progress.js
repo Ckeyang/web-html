@@ -21,13 +21,13 @@ define('ck_progress', ['jquery', 'ck_exception'], function ($, exception) {
             var options = that.getOptions();
             $.extend(that.OPTIONS, options || {});
             that.percent = that.countPercent();
-            that.createProgress();
+            return that.createProgress();
         };
         that.getOptions = function () {
             var options = {};
             that.$targetProgress.attr(progressValue) ? options.value = that.$targetProgress.attr(progressValue) : null;
             that.$progressControls.attr(progressMax) ? options.max = that.$progressControls.attr(progressMax) : null;
-            var flag = options.value / options.max < 1?true:exception.throwException("value大于max了！不好意思不支持!");
+            var flag = options.value / options.max < 1 ? true : exception.throwException("value大于max了！不好意思不支持!");
             return flag ? options : null;
         };
         that.countPercent = function () {
@@ -38,8 +38,14 @@ define('ck_progress', ['jquery', 'ck_exception'], function ($, exception) {
         that.createProgress = function () {
             var percent = that.percent;
             that.$targetProgress.css({width: percent + "%", height: '100%', 'border-radius': '6px'});
+            return that;
         };
-        that.init(gid);
+        that.setValue = function (val) {
+            that.OPTIONS.value = val;
+            that.percent = that.countPercent();
+            that.createProgress();
+        };
+        return that.init(gid);
     };
     var progressController = {
         _progressList: [],
@@ -48,15 +54,19 @@ define('ck_progress', ['jquery', 'ck_exception'], function ($, exception) {
             var length = list.length;
             for (var i = 0; i < length; i++) {
                 var gid = $(list[i]).attr(CKCONTROLSPROGRESS);
-                this._progressList.push(gid);
-                this._createProgress(gid);
+                var obj = this._createProgress(gid);
+                this._progressList.push({key: gid, value: obj});
             }
         },
         _createProgress: function (gid) {
-            progress(gid);
+            return progress(gid);
         },
-        getPopList: function () {
-            return this._progressList;
+        getProgress: function (key) {
+            this._progressList.forEach(function (item) {
+                if (item.key == key) {
+                    return progressController._progressList;
+                }
+            });
         }
     };
     $.ready(progressController.init());
