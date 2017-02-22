@@ -8,7 +8,7 @@ define('ck_defaultclick', ['jquery', 'ck_exception'], function ($, ck_exception)
      * 原型
      * @param pid
      */
-    var popup = function (pid) {
+    var defaultclick = function (pid) {
         /*this.OPTIONS = {
          clazz: 'ck_popup',
          popupName: 'ck_popup',
@@ -46,7 +46,7 @@ define('ck_defaultclick', ['jquery', 'ck_exception'], function ($, ck_exception)
      * 控制器
      * @type {{popupList: Array, init: init, _createPopup: _createPopup, getPopList: getPopList}}
      */
-    var popupControls = {
+    var defaultclickControls = {
         _popupList: [],
         init: function () {
             var list = $('[' + CONTOLSPOPUP + ']');
@@ -58,7 +58,7 @@ define('ck_defaultclick', ['jquery', 'ck_exception'], function ($, ck_exception)
             }
         },
         _createPopup: function (pid) {
-            popup(pid);
+            new defaultclick(pid);
         },
         getPopList: function () {
             return this._popupList;
@@ -67,9 +67,9 @@ define('ck_defaultclick', ['jquery', 'ck_exception'], function ($, ck_exception)
     /**
      * 默认执行初始化
      */
-    $.ready(popupControls.init());
+    $.ready(defaultclickControls.init());
     /**
      * 返回控制器
      */
-    return popupControls;
+    return defaultclickControls;
 });

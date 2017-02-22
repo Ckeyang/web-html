@@ -21,13 +21,15 @@ define('ck_progress', ['jquery', 'ck_exception'], function ($, exception) {
             var options = that.getOptions();
             $.extend(that.OPTIONS, options || {});
             that.percent = that.countPercent();
-            return that.createProgress();
+            that.createProgress();
+
+            return this
         };
         that.getOptions = function () {
             var options = {};
-            that.$targetProgress.attr(progressValue) ? options.value = that.$targetProgress.attr(progressValue) : null;
-            that.$progressControls.attr(progressMax) ? options.max = that.$progressControls.attr(progressMax) : null;
-            var flag = options.value / options.max < 1 ? true : exception.throwException("value大于max了！不好意思不支持!");
+            options.value = that.$targetProgress.attr(progressValue) ? that.$targetProgress.attr(progressValue) : that.OPTIONS.value;
+            options.max = that.$progressControls.attr(progressMax) ? that.$progressControls.attr(progressMax) : that.OPTIONS.max;
+            var flag = options.value / options.max < 1 ? true : exception.throwException($targetProgress.attr(CKPROGRESS) + "value大于max了！不好意思不支持!");
             return flag ? options : null;
         };
         that.countPercent = function () {
@@ -55,18 +57,23 @@ define('ck_progress', ['jquery', 'ck_exception'], function ($, exception) {
             for (var i = 0; i < length; i++) {
                 var gid = $(list[i]).attr(CKCONTROLSPROGRESS);
                 var obj = this._createProgress(gid);
-                this._progressList.push({key: gid, value: obj});
+                this._progressList.push({key: gid, obj: obj});
             }
         },
         _createProgress: function (gid) {
-            return progress(gid);
+            return new progress(gid);
         },
         getProgress: function (key) {
+            var result = {};
             this._progressList.forEach(function (item) {
                 if (item.key == key) {
-                    return progressController._progressList;
+                    result = item.obj;
+                    return
+                } else {
+                    return false
                 }
             });
+            return result;
         }
     };
     $.ready(progressController.init());
