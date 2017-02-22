@@ -14,7 +14,7 @@
     <nav class="ck_nav_topList ck_fr">
         <ul>
             <li><a ck-controlsdefaultclick="popup3" class="ck_btn ck_pr"><img class="ck_avatar"
-                                                                       src="../../images/glyphicons/png/glyphicons-8-user-remove.png">
+                                                                              src="../../images/glyphicons/png/glyphicons-8-user-remove.png">
                 <div ck-defaultclick="popup3" class="ck_min_popup ck_bg_sky-blue ck_popup_bright ck_dn">
                     <nav class="ck_list">
                         <ul>
@@ -33,7 +33,11 @@
     <nav ck-nav="menu" id="testMenu" class="ck_nav_menu ck_font_white">
         <ul class="ck_vertical_menu">
             <li ck-controlsdefaultclick="index"><a href="index.html">index</a></li>
-            <ul class="ck_dn" ck-defaultclick="index"><li>test1</li><li>test2</li><li>test3</li></ul>
+            <ul class="ck_dn" ck-defaultclick="index">
+                <li>test1</li>
+                <li>test2</li>
+                <li>test3</li>
+            </ul>
             <li><a href="layout.html">layouts</a></li>
             <li><a href="table.html">table</a></li>
             <li><a href="chart.html">chart</a></li>
@@ -42,13 +46,19 @@
 </div>
 <div class="ck_content ck_leftbar_250px ck_bg_white">
     <section class="ck_group">
-        <h2>按钮</h2>
+        <h2>时间选择器</h2>
         <div class="ck_part">
-            <a class="ck_btn ck_btn_cancel">按钮</a>
-            <a class="ck_btn ck_btn_sure">按钮</a>
-            <a class="ck_btn ck_btn_success">按钮</a>
-            <a class="ck_btn ck_btn_warn">按钮</a>
-            <a class="ck_btn ck_btn_danger">按钮</a>
+            <span>默认格式</span>
+            <input type="text" value="" id="timepicker2"/>
+        </div>
+        <div class="ck_part">
+            <span>转换模式</span>
+            <input type="text" value="" id="timepicker"/>
+        </div>
+        <div class="ck_part">
+            <span>前后连锁</span>
+            <input type="text" value="" id="timepicker3"/>
+            <input type="text" value="" id="timepicker4"/>
         </div>
     </section>
     <section class="ck_group">
@@ -83,6 +93,19 @@
         </div>
     </section>
     <section class="ck_group">
+        <h2>pagination</h2>
+        <div>
+            <ul class="ck_pagination" ck-pagination="pagination">
+                <li><a href="#">《</a></li>
+                <li><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">》</a></li>
+            </ul>
+        </div>
+    </section>
+    <section class="ck_group">
         <h2>基础颜色</h2>
         <div class="ck_part">
             <div class="ck_btn ck_bg_blue" style="margin: .5em;color:white">ck_bg_blue</div>
@@ -103,21 +126,14 @@
         </div>
     </section>
     <section class="ck_group">
-        <h2>pagination</h2>
-        <div>
-            <ul class="ck_pagination" ck-pagination="pagination">
-                <li><a href="#">《</a></li>
-                <li><a href="#">1</a></li>
-                <li><a href="#">2</a></li>
-                <li><a href="#">3</a></li>
-                <li><a href="#">4</a></li>
-                <li><a href="#">》</a></li>
-            </ul>
+        <h2>按钮</h2>
+        <div class="ck_part">
+            <a class="ck_btn ck_btn_cancel">按钮</a>
+            <a class="ck_btn ck_btn_sure">按钮</a>
+            <a class="ck_btn ck_btn_success">按钮</a>
+            <a class="ck_btn ck_btn_warn">按钮</a>
+            <a class="ck_btn ck_btn_danger">按钮</a>
         </div>
-    </section>
-    <section class="ck_group">
-        <h2>时间选择器</h2>
-        <input type="text"  value="" id="timepicker"/>
     </section>
 </div>
 <script src="../../js/lib/require.js"></script>
