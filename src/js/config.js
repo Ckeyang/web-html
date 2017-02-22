@@ -9,6 +9,7 @@ require.config({
      */
     paths: {
         "jquery": "lib/jquery.min",
+        "foundation-datepicker":'lib/foundation-datepicker.min',
         "ck_defaultclick": "modules/api/ui/defaultclick",
         "ck_exception": "modules/api/exception/exception",
         "ck_url": "modules/api/util/url",
@@ -29,6 +30,7 @@ require.config({
      */
     shim: {
         "ck_popup": ['jquery'],
-        "ck_http": ['jquery']
+        "ck_http": ['jquery'],
+        "foundation-datepicker":['jquery']
     }
 });
